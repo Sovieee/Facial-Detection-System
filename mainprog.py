@@ -30,14 +30,17 @@ ratan_tata_encoding= face_recognition.face_encodings(ratan_tata_image)[0]
 emily_clarke_image = face_recognition.load_image_file(r"D:\pythonattendancesystem\sampleImages\emily.jpeg")
 emily_clarke_encoding = face_recognition.face_encodings(emily_clarke_image)[0]
 
-#tinku_kumar_image = face_recognition.load_image_file(r"D:\pythonattendancesystem\sampleImages\WhatsApp Image 2024-04-24 at 1.24.05 AM.jpeg")
-#tinku_kumar_encoding = face_recognition.face_encodings(tinku_kumar_image)[0]
+tinku_kumar_image = face_recognition.load_image_file(r"D:\pythonattendancesystem\sampleImages\WhatsApp Image 2024-04-24 at 1.24.05 AM.jpeg")
+tinku_kumar_encoding = face_recognition.face_encodings(tinku_kumar_image)[0]
 
 honey_singh_image = face_recognition.load_image_file(r"D:\pythonattendancesystem\sampleImages\honey.jpeg")
 honey_singh_encoding = face_recognition.face_encodings(honey_singh_image)[0]
 
-shrutika_girhe_image = face_recognition.load_image_file(r"D:\pythonattendancesystem\sampleImages\WhatsApp Image 2024-04-24 at 3.28.56 PM.jpeg")
-shrutika_girhe_encoding= face_recognition.face_encodings(shrutika_girhe_image)[0]
+#shrutika_girhe_image = face_recognition.load_image_file(r"D:\pythonattendancesystem\sampleImages\WhatsApp Image 2024-04-24 at 3.28.56 PM.jpeg")
+#shrutika_girhe_encoding= face_recognition.face_encodings(shrutika_girhe_image)[0]
+
+#manas_patil_image = face_recognition.load_image_file(r"D:\pythonattendancesystem\sampleImages\manas_patil")
+#manas_patil_encoding= face_recognition.face_encodings(manas_patil_image)[0]
 
 
 known_face_encoding = [
@@ -107,7 +110,7 @@ while True:
                     if len(name) > 0:
                         # Face detected, send data to pin 13
                         ser.write(bytes([PIN_FACE_DETECTED]))
-                        time.sleep(3)
+                        time.sleep(2)
                         #char = getch.getch()
                         
                         #print("Face Detected")
